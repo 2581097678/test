@@ -1,0 +1,88 @@
+
+.section{
+  width:100%;
+  border-bottom:1px solid #ccc;
+  margin-bottom:10px;
+}
+.secTitle{
+  font-size: 14px;
+  height:30px;
+  line-height: 30px;
+  padding-left:15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secTitle text{
+  color: red;
+}
+
+.more{
+  font-size: 12px;
+}
+.comPic{
+  width:100px;height:100px;
+  display:block;
+  margin:auto;
+}
+.comTitle{
+  width:81px;height:30px;
+  line-height:30px;
+  text-align:left;
+  font-size:14px;
+  padding-left:19px;
+  overflow: hidden;
+}
+/*轮播  */
+.slide-image{
+  width:100%;
+  height:150px;
+}
+/*电影列表  */
+.scroll-view_H{
+    height:130px;
+    display:flex;
+    flex-direction:column;
+    white-space: nowrap;
+}
+.imgBox{
+  width:130px;
+  height:130px;
+  display:inline-block;
+  margin-right:-1px;
+  text-align: center;
+}
+
+/*音乐列表  */
+.scrollY{
+  width:100%;
+  display:flex;
+  /* flex-wrap:wrap;
+  align-content:space-between; */
+  margin-bottom:10px;
+
+}
+.scroll-view-item{
+   width:400px;
+   height:100px;
+   display:flex;
+   margin-bottom:10px; 
+}
+.musicPic{
+  width:100px;height:100px;
+  margin-left: 15px;
+}
+.musicTitle{
+    flex:1;
+    text-align:left;
+    height:80px;
+    font-size:14px;
+    padding-top:10px;
+    padding-left:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.txt{
+  line-height:25px;
+}

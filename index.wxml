@@ -1,0 +1,47 @@
+<view>
+  <!--轮播  -->
+  <swiper 
+    indicator-dots="{{true}}"
+    indicator-active-color="#fff"
+    autoplay="{{true}}" 
+    interval="2000" 
+    duration="1000"
+    circular="true"
+  >
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--电影列表  -->
+  <view class="section">
+    <view class="secTitle">
+      <text>电影列表</text>
+      <text class="more" bindtap="skipMovie">电影推荐>></text>
+    </view>
+    <scroll-view class="scroll-view_H" scroll-x>
+      <view class="imgBox" wx:for="{{movieArr}}" wx:key="index">
+          <image src="{{item.images.small}}" class="comPic" />
+          <view class="comTitle">{{item.title}}</view>
+      </view>
+    </scroll-view>
+  </view>
+  <!--音乐列表  -->
+  <view class="music_box">
+    <view class="secTitle">
+        <text>音乐新歌榜</text>
+        <text class="more" bindtap="skipMusic">新歌推荐>></text>
+    </view>
+    <scroll-view class="scrollY" scroll-y style="height:{{scrollHeight}}px" >
+      <view class="scroll-view-item" wx:for="{{musicArr}}" wx:key="index">
+          <image src="{{item.pic_small}}" class="musicPic" />
+          <view class="musicTitle">
+                <text class="txt">歌曲名：{{item.album_title}}</text>
+                <text class="txt">演唱者：{{item.author}}</text>
+                <text class="txt">发布时间：{{item.publishtime}}</text>
+          </view>     
+      </view>
+    </scroll-view>
+  </view>
+</view>

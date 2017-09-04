@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/index",
+    "pages/music/music",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "微信小程序实例",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"icons/homeSelect.png",
+        "selectedIconPath":"icons/homeSelectr.png"
+      },
+      {
+        "pagePath": "pages/logs/index",
+        "text": "电影",
+        "iconPath": "icons/moveSelect.png",
+        "selectedIconPath": "icons/moveSelectr.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "歌曲",
+        "iconPath": "icons/newsSelect.png",
+        "selectedIconPath": "icons/newsSelectr.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "新闻",
+        "iconPath": "icons/mySelect.png",
+        "selectedIconPath": "icons/mySelectr.png"
+      }
+    ]
+  }
+
+}
